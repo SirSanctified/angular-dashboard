@@ -1,0 +1,34 @@
+<style>
+  .nav-custom {
+    flex: 0 0 auto;
+    gap: 1rem;
+  }
+</style>
+
+<nav
+  class="nav nav-custom flex-column p-4 px-1 px-sm-2 px-md-4 pt-12 h-100 bg-dark text-white shadow"
+  style="width: fit-content"
+>
+  <a
+    routerLink="/"
+    class="d-flex text-white text-decoration-none align-items-center"
+  >
+    <fa-icon [icon]="home"></fa-icon>
+    <span class="p-2 d-none d-md-inline">Dashboard</span>
+  </a>
+  <a
+    routerLink="/enquiries"
+    class="d-flex text-white text-decoration-none align-items-center"
+  >
+    <fa-icon [icon]="enquiries"></fa-icon>
+    <span class="p-2 d-none d-md-inline">Enquiries</span>
+  </a>
+  <a href="#" class="d-flex text-white text-decoration-none align-items-center">
+    <fa-icon [icon]="listing"></fa-icon>
+    <span class="p-2 d-none d-md-inline">Listings</span>
+  </a>
+  <a href="#" class="d-flex text-white text-decoration-none align-items-center">
+    <fa-icon [icon]="agencies"></fa-icon>
+    <span class="p-2 d-none d-md-inline">Agencies</span>
+  </a>
+</nav>

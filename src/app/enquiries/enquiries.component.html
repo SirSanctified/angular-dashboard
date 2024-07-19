@@ -1,0 +1,39 @@
+<div class="datatable table-responsive mx-4 mt-4">
+  <table class="table table-striped table-hover">
+    <caption>
+      List of Enquiries
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Email Address</th>
+        <th scope="col">Message</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (enquiry of enquiries; track enquiry.id) {
+      <tr>
+        <th scope="row">{{ enquiry.firstName }}</th>
+        <td>{{ enquiry.lastName }}</td>
+        <td>{{ enquiry.phoneNumber }}</td>
+        <td>{{ enquiry.email }}</td>
+        <td>{{ enquiry.message }}</td>
+        <td class="d-flex gap-2">
+          <a [routerLink]="['/enquiries', enquiry.id]" class="btn btn-primary"
+            >View
+          </a>
+          <button
+            class="btn btn-danger"
+            (click)="enquiriesService.deleteEnquiry(enquiry.id)"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>
