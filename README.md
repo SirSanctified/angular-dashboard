@@ -17,6 +17,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Previews
 
-![Desktop Preview](/public/desktop-view.png)
+![Desktop Preview](/public/desktop-preview.png)
 ![Tablet Preview](/public/tablet-view.png)
 ![Mobile Preview](/public/mobile-view.png)
